@@ -1,21 +1,16 @@
-import { GreetingComponent, AlertButton, Welcome } from './components/allinone/ComponentsBoard'
+import React from 'react';
+import { MyDatePicker } from './components/DatePicker/DatePicker';
+import { LoginForm } from './components/forms/Login';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <GreetingComponent />
-
-
-      </header>
-      <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
-
-      <AlertButton/>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/* <MyDatePicker /> */}
+            <LoginForm />
+        </div>
+    );
 }
 
 export default App;

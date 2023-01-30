@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { DatePicker } from 'antd';
 
 const GreetingComponent = () => {
     return (
@@ -19,9 +19,17 @@ const AlertButton = () => {
     )
 }
 
-function Welcome(props) {
+const Welcome = (props) => {
     return <h1>Hello, {props.name}</h1>;
 }
 
+const MyDatePicker = () => {
+    return (
+        <div>
+            <DatePicker/>
+        </div>
+    )
+}
 
-export { GreetingComponent, AlertButton, Welcome }
+
+export { GreetingComponent, AlertButton, Welcome, MyDatePicker}
